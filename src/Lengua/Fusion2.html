@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>LOGO SVG</title>
+    <style>
+
+        body,
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("Fondo.svg");
+            background-repeat: repeat;
+
+
+
+        }
+
+        @keyframes rotacion {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(175deg);
+            }
+        }
+
+        #huevo {
+            animation-name: rotacion;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body>
+<div id="huevo"><img src="Logo.svg"></div>
+</body>
+
+</html>

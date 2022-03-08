@@ -1,0 +1,40 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="800"
+        height="800"
+
+        enable-background="new 0 0 320 100"
+>
+ <defs>
+<g id="cuadrarojo">
+    <rect x="0" y="0" width="800" height="800" fill="#353535"/>
+</g>
+    </defs>
+    <defs>
+<g id="iza">
+    <rect x="0" y="0" width="400" height="400" fill="#00C9CF"/>
+</g>
+    </defs>
+    <defs>
+    <g id="izab">
+        <rect x="0" y="0" width="400" height="400" fill="#171A1A"/>
+    </g>
+</defs>
+    <defs>
+    <g id="derar">
+        <rect x="0" y="0" width="400" height="400" fill="black"/>
+    </g>
+        </defs>
+    <defs>
+    <g id="derab">
+        <rect x="0" y="0" width="400" height="400" fill="#00B398"/>
+    </g>
+        </defs>
+    <use xlink:href="#cuadrarojo"/>
+    <use xlink:href="#iza" x="0" y="0"> <animateTransform id="e" attributeName="transform" type="translate" by="400 0"  repeatDur="indefinite" dur="8s" fill="freeze" /></use>
+    <use xlink:href="#izab" x="400" y="0"><animateTransform id="d" attributeName="transform" type="translate" by="400 0" to="0 400"  repeatDur="indefinite" dur="8s" fill="freeze"/></use>
+    <use xlink:href="#derar" x="0" y="400"><animateTransform id="f" attributeName="transform" type="translate" by="-400  0" to="0 -400"  repeatDur="indefinite" dur="8s" fill="freeze"/></use>
+    <use xlink:href="#derab" x="400" y="400"><animateTransform id="g" attributeName="transform" type="translate" by="-400  0"  repeatDur="indefinite" dur="8s" fill="freeze"/></use>
+
+</svg>
