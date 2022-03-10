@@ -1,0 +1,12 @@
+B1|3|Vino Blanco en formato de 1L
+B2|5|Vino Blanco en formato de 2L
+B3|7|Vino Blanco en formato de 3L
+B5|12|Vino Blanco en formato de 5L
+R1|3|Vino Rosado en formato de 1L
+R2|5|Vino Rosado en formato de 2L
+R3|7|Vino Rosado en formato de 3L
+R5|12|Vino Rosado en formato de 5L
+T1|3|Vino Tinto en formato de 1L
+T2|5|Vino Tinto en formato de 2L
+T3|7|Vino Tinto en formato de 3L
+T5|12|Vino Tinto en formato de 5L
