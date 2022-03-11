@@ -1,4 +1,3 @@
-package ExamenRecuperacion;
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -11,7 +10,7 @@ public class Products
 
     File productsFile = new File("products.txt");
 
-    Product[] products = new Product[12];
+    Product[] products = new Product[12]; //creamos un array donde de espacio le ponemos 12 que es donde almacenara los productos
 
     public Products()
     {
@@ -40,8 +39,8 @@ public class Products
                 String code = String.format("%c%c", vino.charAt(0), litro.charAt(0));
                 int price = precios[indice % precios.length];
                 String name = String.format("Vino %s en formato de %s", vino, litro);
-
-                products[indice++] = new Product(code, price, name);
+                int quantity = 100;
+                products[indice++] = new Product(code, price, name, quantity);
             }
     }
 
@@ -50,7 +49,7 @@ public class Products
         try (PrintWriter writer = new PrintWriter(productsFile))
         {
             for (Product product : products)
-                writer.format("%s|%d|%s\n", product.code, product.price, product.name);
+                writer.format("%s|%d|%s|%d\n", product.code, product.price, product.name, product.quantity); // "\n guarda la informacio y cambia de linea
         }
         catch(Exception e)
         {
@@ -66,13 +65,14 @@ public class Products
 
             while (reader.hasNextLine())
             {
-                String[] pieces = reader.nextLine().split("\\|");
+                String[] pieces = reader.nextLine().split("\\|"); // cada parte al sser un simbolo que no significa nada le añadimos "|"
 
                 String code = pieces[0];
                 int price = Integer.parseInt(pieces[1]);
                 String name = pieces[2];
+                int quantity = Integer.parseInt(pieces[3]);
 
-                products[indice++] = new Product(code, price, name);
+                products[indice++] = new Product(code, price, name, quantity);
             }
         }
         catch (Exception e)
@@ -80,8 +80,31 @@ public class Products
             System.out.println("Something went wrong reading products file");
         }
     }
+    public void updateStock()
+    {
+        Scanner sc = new Scanner(System.in);
 
-    public void modify()
+        System.out.print("What product stock do you want to modify? ");
+        String code = sc.nextLine();
+        int result = codeExist(code);
+        if (result != -1)
+        {
+            System.out.println(products[result].name);
+            System.out.println("Stock: " + products[result].quantity);
+            int oldQuantity = products[result].price;
+            System.out.print("Stock change: ");
+            try
+            {
+                products[result].quantity += sc.nextInt();
+                writeList();
+            }
+            catch (NumberFormatException e)
+            {
+                products[result].quantity = oldQuantity;
+            }
+        }
+    }
+    public void modifyPrice()
     {
         Scanner sc = new Scanner(System.in);
 
@@ -119,9 +142,10 @@ public class Products
     {
         Products celler = new Products();
         celler.showList();
-/*
-        celler.modify();
+        celler.modifyPrice();
         celler.showList();
-*/
+        celler.updateStock();
+        celler.showList();
+
     }
 }
