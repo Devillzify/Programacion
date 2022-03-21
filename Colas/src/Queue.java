@@ -1,4 +1,3 @@
-package Colas;
 
 public class Queue
 {

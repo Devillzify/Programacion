@@ -1,15 +1,10 @@
-package Colas;
+
 
 public class ClientGenerator
 {
-
-   static int Precio;
-   static int Preciototal;
-   static int cantidad;
-   static int PagoAdulto = 8;
-   static int PagoNino = 4;
-   static String Adulto = "Adulto";
-   static String Nino = "Niño";
+   static int Preciototal = 0;
+   static int PagoAdulto = 12;
+   static int PagoNino = 6;
    public ClientGenerator()
    {
 
@@ -22,26 +17,28 @@ public class ClientGenerator
            return "Adulto";
        else
        {
-           return "Niño";
+           return "Nino";
        }
    }
 
    public static String CantidadClientes(int cantidad)
    {
-       for(int i = 0; i < cantidad; i++)
+       for(int i = 1; i < cantidad; i++)
        {
            String edad = GeneradorClient();
            System.out.println(edad);
            Ordenada.insert(edad);
            if(edad.equals("Adulto"))
            {
-               Preciototal += 8;
+               Preciototal += PagoAdulto;
            }
-           else
-               Preciototal += 4;
+         if(edad.equals("Nino"))
+         {
+             Preciototal += PagoNino;
+         }
        }
 
-       System.out.println("La ganacia total es de: " + Preciototal);
+
 
        return null;
    }

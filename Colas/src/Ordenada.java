@@ -1,4 +1,4 @@
-package Colas;
+
 
 public class Ordenada<current>
 {
@@ -60,36 +60,3 @@ public class Ordenada<current>
         }
     }
 }
-
-
-
-
-   /* public void insert(String data){ // creamos nodo y si first es igual a nada, no hay nadie y el que insertamos a la vez es el primero y el ultimo, si no hay que recorrer la lista hasta que haya sitio
-        Node work = new Node(data);
-
-        if(first == null){
-            first = work;
-            last = work;
-        }
-        else{
-            Node current = first;
-            Node previous = null;
-
-            while(current != null){
-               if(data.compareTo(current.data) < 0){
-                   previous = current;
-                   current = current.next;
-               }
-               else{
-                   if(current == first){ // si es el primero se coloca primero
-                       work.next = first;
-                       first = work;
-                   }
-                   else{
-                       previous.next = work;
-                       work.next = current;
-                   }
-               }
-            }
-        }
-    }*/

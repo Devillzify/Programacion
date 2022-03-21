@@ -1,4 +1,4 @@
-package ProgramacionCasa.Poligonos;
+
 
 public class Vertices
 {

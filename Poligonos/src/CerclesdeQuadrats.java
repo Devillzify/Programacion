@@ -1,4 +1,3 @@
-package ProgramacionCasa.Poligonos;
 
 import static java.awt.Color.HSBtoRGB;
 

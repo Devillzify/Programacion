@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb465343-4967-41fd-a8d5-61f448f596ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Romans/src/ConvertArabic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Romans/src/ConvertRomans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Romans/src/Romans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Romans/src/Scannerutils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas/src/ClientGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas/src/ClientGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas/src/Ordenada.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas/src/Ordenada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas/src/Pile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas/src/Pile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas/src/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas/src/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas/src/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas/src/Testing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Colas2.0/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Colas2.0/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Romanos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Romanos/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Romanos/out/production/Romanos/ComprobarNumero.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Romanos/out/production/Romanos/ComprobarNumero.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Romanos/out/production/Romanos/ConvertirRomanos.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Romanos/out/production/Romanos/ConvertirRomanos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Romanos/out/production/Romanos/MainRomanos.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Romanos/out/production/Romanos/MainRomanos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Romanos/src/MainRomanos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Romanos/src/MainRomanos.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="26W62t1nZfu0bwgkSkmcHPSAgFA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb465343-4967-41fd-a8d5-61f448f596ee" name="Changes" comment="" />
+      <created>1647526796202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647526796202</updated>
+      <workItem from="1647526800485" duration="206000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
