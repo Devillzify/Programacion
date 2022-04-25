@@ -166,7 +166,8 @@ public class ImatgePPMlogic
                     if (color)
                     {
                         pw.print(color1);
-                    } else
+                    }
+                    else
                     {
                         pw.print(color2);
                     }
