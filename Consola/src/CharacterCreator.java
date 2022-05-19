@@ -1,4 +1,4 @@
-package Consola;
+
 
 public class CharacterCreator
 {

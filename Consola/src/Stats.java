@@ -1,4 +1,3 @@
-package Consola;
 
 public class Stats
 {

@@ -54,8 +54,8 @@ public class Targa
 
     private void header(OutputStream fos) throws IOException
     {
-        byte[] header = {0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 66, 66, 77, 77, 24, 0x20}; // el 3 numero indica el color
-// el 24 son los bits
+        byte[] header = {0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'w', 'w', 'h', 'h', 24, 0x20};
+
         header[12] = (byte) (width & 0xFF);
         header[13] = (byte) ((width >> 8) & 0xFF);
 
@@ -67,13 +67,14 @@ public class Targa
 
     private void startUp()
     {
-        double aspect = (double) width / (double) height;
+        double aspect;
         double radio = 1.0 / zoom;
         double xstart, xstop;
         double ystart, ystop;
 
         if (width > height)
         {
+            aspect = (double) width / (double) height;
             xstart = xcenter - radio * aspect;
             xstop = xcenter + radio * aspect;
             ystart = ycenter + radio;
@@ -81,6 +82,7 @@ public class Targa
         }
         else
         {
+            aspect = (double) height / (double) width;
             xstart = xcenter - radio;
             xstop = xcenter + radio;
             ystart = ycenter + radio * aspect;
@@ -105,10 +107,14 @@ public class Targa
     {
         double z = Math.sqrt(x * x + y * y);
 
-        z = Math.floor(Math.toDegrees(z) / 2.0);
+/*
+        z = Math.toDegrees(z);
 
         double t = 0.5 + Math.sin(z) / 2.0;
 
         return Color.add(c1, Color.times(t, Color.sub(c2, c1)));
+*/
+        if (z < 1.0) return c1;
+        return c2;
     }
 }
